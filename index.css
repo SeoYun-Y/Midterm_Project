@@ -1,3 +1,129 @@
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: aquamarine;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+li {
+    list-style-type: none;
+}
+
+.profile-img {
+    background-color: #282828;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.profile-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.profile-section {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    background-color: gray;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.toggle-label:hover {
+    background-color: black;
+}
+
+.profile-info,
+.profile-like {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: none;
+}
+
+.profile-info h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: black;
+}
+
+.profile-info ul {
+    padding: 0;
+}
+
+.profile-info li {
+    font-size: 18px;
+    text-align: left;
+    background: url("images/list.jpg") no-repeat left center;
+    background-size: 20px auto;
+    padding-left: 30px;
+    margin: 10px 0;
+}
+
+.profile-like h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: black;
+}
+
+.profile-like ul {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-like li {
+    margin: 0 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-like img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile-like span {
+    display: block;
+    padding: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.toggle-checkbox:checked + .toggle-label + .profile-info,
+.toggle-checkbox:checked + .toggle-label + .profile-like {
+    display: block;
 }

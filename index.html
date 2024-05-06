@@ -1,13 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내 웹사이트</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="utf-8">
+    <title>서윤 Profile</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>안녕하세요, 저는 염서윤입니다!</h1>
-    <p>이곳은 제 개인 웹사이트입니다.</p>
+
+    <!--프로필 이미지-->
+    <div class="profile-img">
+        <div>
+            <img src="images/me.jpg" alt="Profile Picture">
+            <h1>Welcome!!</h1>
+        </div>
+    </div>
+
+    <!--나의 소개 (체크박스 + 내용)-->
+    <div class="profile-section">
+        <input type="checkbox" id="toggle-info" class="toggle-checkbox">
+        <label for="toggle-info" class="toggle-label">About Me</label>
+        <div id="profile-info" class="profile-info">
+            <h1>Yeom Seoyun</h1>
+            <ul>
+                <li>22살</li>
+                <li>용인시 수지구 거주</li>
+                <li>모바일시스템공학과</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--좋아하는 것 (체크박스 + 내용)-->
+    <div class="profile-section">
+        <input type="checkbox" id="toggle-like" class="toggle-checkbox">
+        <label for="toggle-like" class="toggle-label">좋아하는 것</label>
+        <div id="profile-like" class="profile-like">
+            <h2>좋아하는 것</h2>
+            <ul>
+                <li>
+                    <span>맛있는거 먹기</span>
+                    <img src="images/eat.jpg" alt="Eating">
+                </li>
+                <li>
+                    <span>영화보기</span>
+                    <img src="images/popcorn.jpg" alt="Watching Movies">
+                </li>
+                <li>
+                    <span>잠 자기</span>
+                    <img src="images/zzz.jpg" alt="Sleeping">
+                </li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
