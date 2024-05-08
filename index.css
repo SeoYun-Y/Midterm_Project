@@ -62,7 +62,8 @@ li {
 }
 
 .profile-info,
-.profile-like {
+.profile-like,
+.profile-video {
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -70,7 +71,9 @@ li {
     display: none;
 }
 
-.profile-info h1 {
+.profile-info h1,
+.profile-like h2,
+.profile-video h2 {
     margin-bottom: 20px;
     font-size: 28px;
     color: black;
@@ -123,7 +126,25 @@ li {
     color: #333;
 }
 
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
 .toggle-checkbox:checked + .toggle-label + .profile-info,
-.toggle-checkbox:checked + .toggle-label + .profile-like {
+.toggle-checkbox:checked + .toggle-label + .profile-like,
+.toggle-checkbox:checked + .toggle-label + .profile-video {
     display: block;
 }
