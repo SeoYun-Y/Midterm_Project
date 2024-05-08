@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>서윤 Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -10,13 +11,21 @@
     <!--프로필 이미지-->
     <div class="profile-img">
         <div>
-            <img src="images/me.jpg" alt="Profile Picture">
+            <img src="images/me2.jpg" alt="Profile Picture">
             <h1>Welcome!!</h1>
+            <h2>
+                <i class="fas fa-envelope"></i>
+                <span class="email">32222661@dankook.ac.kr</span>
+            </h2>
         </div>
     </div>
 
     <!--나의 소개 (체크박스 + 내용)-->
     <div class="profile-section">
+        <div class="info-message">
+            <p>Please push the button</p>
+            <i class="fas fa-arrow-down"></i>
+        </div>
         <input type="checkbox" id="toggle-info" class="toggle-checkbox">
         <label for="toggle-info" class="toggle-label">About Me</label>
         <div id="profile-info" class="profile-info">
@@ -34,7 +43,7 @@
         <input type="checkbox" id="toggle-like" class="toggle-checkbox">
         <label for="toggle-like" class="toggle-label">Like</label>
         <div id="profile-like" class="profile-like">
-            <h2>좋아하는 것</h2>
+            <h2>Favorite</h2>
             <ul>
                 <li>
                     <span>맛있는거 먹기</span>
@@ -55,13 +64,19 @@
     <!-- 유튜브 동영상 버튼 및 임베드 -->
     <div class="profile-section">
         <input type="checkbox" id="toggle-video" class="toggle-checkbox">
-        <label for="toggle-video" class="toggle-label">Most like Video</label>
+        <label for="toggle-video" class="toggle-label">Most Like Video</label>
         <div id="profile-video" class="profile-video">
             <h2>귀여운 먼치킨 야옹이</h2>
             <div class="video-wrapper">
                 <iframe src="https://www.youtube.com/embed/jjly8f3Ta-I?si=BRBqFOZW0OTfjNI5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
+    </div>
+
+    <!-- 감사 메시지 -->
+    <div class="thank-you-message">
+        <img src="images/bye.jpg" alt="Thank You Icon">
+        <p>thank you for watching!</p>
     </div>
 
 </body>

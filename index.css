@@ -8,8 +8,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f5eeee;
+    color: #8b8383;
 }
 
 li {
@@ -35,9 +35,30 @@ li {
     z-index: 1;
 }
 
+.profile-img h1 {
+    font-size: 24px;
+}
+
+.profile-img h2 {
+    font-size: 16px; /* 이메일 글씨 크기 줄임 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* 아이콘과 이메일 사이 간격 */
+}
+
+.profile-img .fas.fa-envelope {
+    font-size: 16px;
+    color: #797777; /* 이메일 아이콘 색상 */
+}
+
+.profile-img .email {
+    font-size: 14px; /* 이메일 글씨 크기 */
+}
+
 .profile-section {
     width: 80%;
-    margin: 20px auto;
+    margin: 30px auto;
     text-align: center;
 }
 
@@ -46,7 +67,7 @@ li {
 }
 
 .toggle-label {
-    background-color: gray;
+    background-color: rgb(2, 2, 2);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -147,4 +168,46 @@ li {
 .toggle-checkbox:checked + .toggle-label + .profile-like,
 .toggle-checkbox:checked + .toggle-label + .profile-video {
     display: block;
+}
+
+.thank-you-message {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+    color: #282828;
+    font-weight: bold; /* 폰트 굵게 변경 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* 이미지와 텍스트 사이 간격 */
+}
+
+.thank-you-message img {
+    width: 150px; /* 이미지 크기 조절 */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%; /* 원형으로 자르기 */
+}
+
+/* 추가된 메시지 */
+.info-message {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-message p {
+    margin: 0;
+    font-weight: bold;
+    color: #282828;
+}
+
+.info-message i {
+    font-size: 24px;
+    color: #282828;
 }
